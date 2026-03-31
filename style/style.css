@@ -16,14 +16,23 @@ body {
 }
 
 .tete-titre{
-    font-size: 25px;
+    font-size: 35px;
 }
 .tete-titre span{
     color: rgba(51, 96, 32);
 }
 
 .tete-menu{
-    font-size: 18px;
+    font-size: 20px;
+}
+.tete-menu a {
+    margin-right: 12px;
+    color: #9877c1;
+    text-decoration: none;
+}
+.tete-menu a:hover{
+    color: #77936a;
+    text-decoration: 2px underline #b6c4f7;
 }
 .tete-menu i {
     color: black;
@@ -35,7 +44,18 @@ body {
 }
 .tete-bouton button{
     background-color: #3f65f0;
+    color: white;
     margin-left: 10px;
+    border-radius: 25px 25px 25px 25px;
+    height: 45px;
+    font-size: 15px;
+    width: 130px;
+    border: none;
+}
+.tete-bouton button:hover{
+    background-color: white;
+    color: #3f65f0;
+    border: 1px solid #3f65f0;
 }
 
 main{
@@ -45,7 +65,24 @@ main{
 }
 
 .main-desc{
-    background-color: aliceblue;
+    padding-left: 80px ;
+    padding-right: 10px;
+}
+.main-desc h2{
+    font-size : 48px;
+}
+.main-desc span {
+    color : #3f65f0;
+}
+.main-desc button{
+    background-color: #3f65f0;
+    color: white;
+    margin-left: 10px;
+    border-radius: 50px 50px 50px 50px;
+    height: 45px;
+    font-size: 16px;
+    width: 230px;
+    border: none;
 }
 
 .main-img{
