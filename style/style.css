@@ -1,35 +1,53 @@
-* {
-    width: 100%;
-    height: 100%;
+body {
+    background-image: url(../image/font1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .tete{
     width: 100%;
-    min-height: 300px ;
+    min-height: 50px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
 }
 
 .tete-titre{
     font-size: 25px;
 }
+.tete-titre span{
+    color: rgba(51, 96, 32);
+}
 
 .tete-menu{
     font-size: 18px;
 }
+.tete-menu i {
+    color: black;
+}
 
 .tete-bouton{
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+}
+.tete-bouton button{
+    background-color: #3f65f0;
+    margin-left: 10px;
 }
 
 main{
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 .main-desc{
-    display: flex;
-    flex-direction: column;
+    background-color: aliceblue;
 }
 
 .main-img{
-    background-color: white;
+    background-color: #3f65f0;
 }
