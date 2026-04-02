@@ -19,7 +19,7 @@ body {
     font-size: 35px;
 }
 .tete-titre span{
-    color: rgba(51, 96, 32);
+    color: #3f65f0;
 }
 
 .tete-menu{
@@ -27,15 +27,18 @@ body {
 }
 .tete-menu a {
     margin-right: 12px;
-    color: #9877c1;
+    color: black;
     text-decoration: none;
 }
 .tete-menu a:hover{
-    color: #77936a;
+    color: #3f65f0;
     text-decoration: 2px underline #b6c4f7;
 }
 .tete-menu i {
     color: black;
+}
+.tete-menu i:hover{
+    color : #3f65f0;
 }
 
 .tete-bouton{
@@ -67,6 +70,7 @@ main{
 .main-desc{
     padding-left: 80px ;
     padding-right: 10px;
+    width: 600px;
 }
 .main-desc h2{
     font-size : 48px;
@@ -85,6 +89,11 @@ main{
     border: none;
 }
 
-.main-img{
+.blue-cont{
     background-color: #3f65f0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 100% 0 0 0;
+
 }
