@@ -21,6 +21,23 @@ body {
 .tete-titre span{
     color: #3f65f0;
 }
+.tete-titre:hover{
+    animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-in-center {
+  0% {
+            transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+            transform: scale(1.2);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 .tete-menu{
     font-size: 20px;
@@ -87,6 +104,17 @@ main{
     font-size: 16px;
     width: 230px;
     border: none;
+    cursor: pointer;
+}
+
+.main-desc button:hover {
+    animation: pulse 1s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 .blue-cont{
@@ -95,5 +123,29 @@ main{
     bottom: 0;
     right: 0;
     border-radius: 100% 0 0 0;
+    width: 550px;
+    height: 500px;
+}
 
+.blue-cont img{
+    object-fit: contain;
+    position: relative;
+    top: 150px;
+    left: 80px;
+    width: 70%;
+    height: 70%;
+}
+
+.blue-cont img:hover{
+    animation: slide-in-bck-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
 }
